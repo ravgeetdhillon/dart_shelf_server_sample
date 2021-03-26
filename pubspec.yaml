@@ -1,0 +1,12 @@
+name: dart_shelf_server_sample
+description: A web server built using the shelf package.
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  shelf: ^1.1.0
+  shelf_router: ^1.0.0
+
+dev_dependencies:
+  pedantic: ^1.11.0
