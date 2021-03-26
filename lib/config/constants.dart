@@ -3,4 +3,4 @@
 const String hostname = 'localhost';
 const int port = 8080;
 const String baseApiUrl = 'data/api';
-const String fileDir = 'data';
+const String fileDir = 'files';
