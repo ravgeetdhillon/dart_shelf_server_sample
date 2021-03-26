@@ -18,12 +18,12 @@ class PostController {
     /// List of a specific posts identified by the id
     var posts = fromJson(File('$baseApiUrl/posts.json').readAsStringSync());
     posts = posts.map((post) => Post.fromJson(post)).toList();
-    var post = posts.where((post) {
+    var post = posts.firstWhere((post) {
       return post.id == int.parse(id);
-    }).toList();
-    if (post.length == 0) {
+    }, orElse: () => null);
+    if (post == null) {
       return Response.notFound('Not Found');
     }
-    return Response.ok(post[0].toJsonString());
+    return Response.ok(post.toJsonString(), headers: {'Content-Type': 'application/json'});
   }
 }
