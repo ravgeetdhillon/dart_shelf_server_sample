@@ -5,7 +5,7 @@
     "lib"
   ],
   "ext": "dart",
-  "exec": "dart bin/server.dart",
+  "exec": "dart bin/server.dart && dart2js -o public/assets/script.js lib/standalone/index.dart",
   "execMap": {
     "dart": "dart"
   }
