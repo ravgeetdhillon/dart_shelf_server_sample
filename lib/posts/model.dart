@@ -1,3 +1,5 @@
+// This file contains posts model
+
 import 'dart:convert';
 
 class Post {

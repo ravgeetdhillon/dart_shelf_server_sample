@@ -1,5 +1,5 @@
-// // This file relates to the main server
-// // This file is hot reloaded using nodemon
+// This file relates to the main server
+// Server is automatically reloaded using nodemon when the source code changes
 
 import 'package:dart_shelf_server_sample/config/constants.dart';
 import 'package:dart_shelf_server_sample/config/routes.dart';

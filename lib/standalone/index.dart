@@ -1,3 +1,6 @@
+// This file serves as an example to writing dart code which is compiled
+// to javascript for the client side use using dart2js
+
 import 'dart:html' as html;
 import 'dart:async';
 
